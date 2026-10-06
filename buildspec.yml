@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - npm ci
+
+  build:
+    commands:
+      - echo "Validating FindIt server..."
+      - node --check server.js
+      - echo "FindIt build validation successful!"
+
+  post_build:
+    commands:
+      - echo "Build completed successfully."
+
+artifacts:
+  files:
+    - '**/*'
