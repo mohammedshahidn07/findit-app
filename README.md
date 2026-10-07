@@ -4,7 +4,7 @@ This is the fully working local version of FindIt. It uses the exact same
 pipeline shape FindIt will use on AWS — only the implementation of each
 piece changes later:
 
-| In this build | On AWS later |
+| In this build | On AWS |
 |---|---|
 | `uploads/` folder | S3 bucket |
 | `data.json` file | DynamoDB table |
